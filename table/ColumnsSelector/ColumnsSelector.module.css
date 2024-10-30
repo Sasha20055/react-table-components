@@ -1,0 +1,29 @@
+
+.columnsSelector {
+    display: inline-block;
+}
+
+.columnsSelector a {
+    padding-left: 0;
+    top: 1px;
+    position: relative;
+}
+
+.columnsSelector i {
+    padding: 0 5px 0 5px;
+    display: inline;
+}
+
+.columnsSelector > div {
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.columnsSelector i.hidden {
+    width: 25px;
+    display: inline-block;
+}
+
+.columnsSelector .hover {
+    border-top: 2px solid #ccc;
+}

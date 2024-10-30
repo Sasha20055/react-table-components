@@ -1,0 +1,175 @@
+
+.dataTable, .dataTable input {
+    font-size: 0.75rem;
+}
+
+.dataTable .table td.overflow {
+    overflow: auto;
+    max-width: 50px;
+}
+
+.filterTabsContainer {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.filterTabs {
+    font-size: 14px;
+    font-weight: 500;
+}
+
+.contextMenuItem {
+    font-size: 11px;
+    padding: 2px 5px;
+    cursor: pointer;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.contextMenuItem:hover {
+    background-color: #ffffff;
+    text-decoration: none;
+}
+
+.contextMenu {
+    position: absolute;
+    list-style: none;
+    background-color: #eeeeee;
+    padding: 0;
+    border: 1px solid #dee2e6;
+    border-radius: 0 5px 5px 5px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    -webkit-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.14);
+    -moz-box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.14);
+    box-shadow: 1px 1px 2px 1px rgba(0, 0, 0, 0.14);
+}
+
+.pageSizeMenu {
+    padding: 10px;
+}
+
+.pageSizeContainer {
+    position: absolute;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    z-index: 100;
+    width: 150px;
+    height: fit-content;
+    cursor: pointer;
+}
+
+.dataTable .table td {
+    padding: 3px 5px !important;
+}
+
+.headerContainer {
+    margin: 0;
+    max-width: 100%;
+}
+
+.cardBody {
+    overflow: auto;
+}
+
+.dataTable .cardHeader {
+    padding: .25rem 1.25rem;
+}
+
+.dataTable .cardHeader button.link {
+    font-size: 0.75rem;
+    padding-left: 0;
+}
+
+.dataTable .cardHeader .title {
+    top: 3px;
+    font-weight: 500;
+    font-size: 1.1rem;
+    color: #1B1B1B;
+}
+
+.headerTitleRow {
+    display: flex;
+    justify-content: center;
+}
+
+.dataTable .table th {
+    text-align: center;
+    vertical-align: middle;
+}
+
+.dataTable .table th .faFilter {
+    cursor: pointer;
+    color: grey;
+    float: right;
+    padding: 4px 0 5px 5px;
+}
+.dataTable .table th .faFilter:before {
+    content: "\f0b0";
+}
+.dataTable .table th .faFilter.selected {
+    color: green;
+}
+.dataTable .table th .faTimes {
+    cursor: pointer;
+    color: red;
+    float: right;
+    padding: 4px 0 5px 5px;
+}
+
+.columnsSelector {
+    display: inline-block;
+}
+
+.columnsSelector a {
+    padding-left: 0;
+    top: 1px;
+    position: relative;
+}
+
+.columnsSelector i {
+    padding: 0 5px 0 5px;
+    display: inline;
+}
+
+.columnsSelector i.hidden {
+    width: 25px;
+    display: inline-block;
+}
+
+.columnsSelector .hover {
+    border-top: 2px solid #ccc;
+}
+
+.dataTable input.search {
+    width: 125px;
+    margin-right: 0.75rem;
+    display: inline-block;
+}
+
+.dataTable .thContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: space-between;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.dataTable .thContainer .thTitle {
+    flex-grow: 1;
+    color: #414E62;
+}
+
+.dataTable th.sortable  {
+    cursor: pointer;
+}
+
+.dataTable .cardHeader button {
+    margin-left: 3px;
+}
+
+.dataTable .selectRow {
+    background-color: rgb(220, 52, 43, 0.4) !important;
+}

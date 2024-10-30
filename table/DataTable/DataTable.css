@@ -1,0 +1,34 @@
+
+.data-table th.yes-no, .data-table td.yes-no {
+	width: 100px;
+	text-align: center
+}
+
+.data-table .mark {
+	background-color: initial
+}
+.data-table .actions i {
+	cursor: pointer;
+	color: #777;
+}
+
+.filter .form-check {
+	padding-left: 2.25rem
+}
+
+.data-table .filter {
+	z-index: 99;
+	border: solid 1px #777;
+	position: fixed;
+	background-color: #fff;
+	padding: 10px;
+}
+
+.data-table .filter .body {
+	height: 100%;
+    margin-bottom: -35px;	
+}
+
+.data-table .filter label {
+	display: block;
+}
