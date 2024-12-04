@@ -63,18 +63,15 @@ yarn add react-table-components
 
 ```
 render() {
-	return (
-		<DataTable {...this.props}
-			title = "Уведомления"
-			sort = {{field: "created", dir: 'desc'}}
-			fetch = {this.fetch.bind(this)}
-			columns = {[
-				{ title: "#", field: "id", filter: DataTable.STRING_FILTER},
-				{ title: "Тема", field: "subject", filter: DataTable.STRING_FILTER},
-				{ title: "Описание", field: "body", filter: DataTable.STRING_FILTER},
-			]}
-			/>
-	);
+	return <DataTable {...this.props}
+		title = "Уведомления"
+		sort = {{field: "created", dir: 'desc'}}
+		fetch = {this.fetch.bind(this)}
+		columns = {[
+			{ title: "#", field: "id", filter: DataTable.STRING_FILTER},
+			{ title: "Тема", field: "subject", filter: DataTable.STRING_FILTER},
+			{ title: "Описание", field: "body", filter: DataTable.STRING_FILTER},
+		]}/>
 }
 ```
 
@@ -82,38 +79,30 @@ render() {
 
 ```
 render() {
-	return (
-		<div>
-			<Row>
-				<Col>
-					<DataTable {...this.props}
-					   contextMenuObj={this.contextMenuObj}
-					   filterTabs={filterTabs}
-					   defaultFilterParam={field}
-					   serviceFilterTabs={QuoteService}
-					   title = {this.props.title}
-					   openAddForm = {this.openAddForm.bind(this)}
-					   openEditForm = {this.openEditForm.bind(this)}
-					   fetch = { ... }
-					   fetchXLS = {this.fetchXLS.bind(this)}
-					   tableHeaderRenderer = {this.renderTableHeader}
-					   getQuoteStatuses={this.getQuoteStatuses}
-					   tableBodyRenderer = { ... }
-					   features = { ... }}
-					   resizable = {true}
-					   columns = {this.columns().filter(col => { return Object.keys(col).length !== 0 })}
-					   style = {{maxHeight: this.state.tableHeight}}
-					   tableClassName = "no-line-break"
-					   dataTableAlerts = {this.state.dataTableAlerts}
-					   dataTableNotifications = {this.state.dataTableNotifications}
-					   alertClickHandler = {this.openEditForm.bind(this)}
-					   alertItemTitle={"Заявка"}
-					   setColumns = {this.setColumns}
-					/>
-				</Col>
-			</Row>
-		</div>
-	);
+	return <DataTable {...this.props}
+	   contextMenuObj={this.contextMenuObj}
+	   filterTabs={filterTabs}
+	   defaultFilterParam={field}
+	   serviceFilterTabs={QuoteService}
+	   title = {this.props.title}
+	   openAddForm = {this.openAddForm.bind(this)}
+	   openEditForm = {this.openEditForm.bind(this)}
+	   fetch = { ... }
+	   fetchXLS = {this.fetchXLS.bind(this)}
+	   tableHeaderRenderer = {this.renderTableHeader}
+	   getQuoteStatuses={this.getQuoteStatuses}
+	   tableBodyRenderer = { ... }
+	   features = { ... }}
+	   resizable = {true}
+	   columns = {this.columns().filter(col => { return Object.keys(col).length !== 0 })}
+	   style = {{maxHeight: this.state.tableHeight}}
+	   tableClassName = "no-line-break"
+	   dataTableAlerts = {this.state.dataTableAlerts}
+	   dataTableNotifications = {this.state.dataTableNotifications}
+	   alertClickHandler = {this.openEditForm.bind(this)}
+	   alertItemTitle={"Заявка"}
+	   setColumns = {this.setColumns}
+	/>
 	}
 }
 ```
